@@ -66,7 +66,7 @@ selection_enabled = false
 override_selected_font_color = false
 _sections_unfolded = [ "BBCode", "custom_fonts" ]
 
-[node name="LineEdit" type="LineEdit" parent="Blackboard" index="1"]
+[node name="TextBox" type="LineEdit" parent="Blackboard" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -148,7 +148,7 @@ selection_enabled = false
 override_selected_font_color = false
 _sections_unfolded = [ "custom_fonts" ]
 
-[connection signal="text_entered" from="Blackboard/LineEdit" to="." method="_on_LineEdit_text_entered"]
+[connection signal="text_entered" from="Blackboard/TextBox" to="." method="_on_TextBox_text_entered"]
 
 [connection signal="pressed" from="Blackboard/TextureButton" to="." method="_on_TextureButton_pressed"]
 
